@@ -17,14 +17,7 @@
     </style>
 </head>
 <body>
-    <h1>Olá Mundo</h1>
-    <p>Maldição pulada com sucesso!</p>
-    <!--Comentario em HTML-->
     <script>
-                        // a tag script geralmente pode ser aberta ao final do body, antes de fechar, para que eles, os scripts, sejam executados depois de carregar o conteúdo da página, o código base
-    window.alert("Minha primeira mensagem"); // hoje em dia não é necessário ;
-    window.confirm("Está gostando de JS?");
-    window.prompt("Qual é seu nome?");
     //Comentário em JS
     /*var n1=window.prompt("Digite sua primeira nota ");
     var n2=window.prompt("Digite a segunda: "); // prompt retorna seu resultado como string, então não adianta somar 
@@ -46,19 +39,21 @@
         window.alert("Você foi REprovado");
     }
     */
-    var a =Number.parseInt(prompt("Digite a primeira nota: ", "Digite aqui")); // existe parseFloat tmb
+     var nome = prompt("Digite seu nome: ","Digite aqui"); // parametro1 = msg principal parametro 2= placeholder
+     var a =Number.parseInt(prompt("Digite a primeira nota: ", "Digite aqui")); // existe parseFloat tmb
      var b =Number(prompt("Digite a segunda nota: ", "Digite aqui")); // posso usar só Number() que funciona com qualquer tipo de number int ou float
      var media = ((a+b)/2);
     alert("Sua média foi " + media);
     if (media>=5)
     {
-        window.alert("Você foi aprovado");
+        window.alert(nome+" ,você foi aprovado com média " + media); // usando interpolação
     }
     else
     {
-        window.alert("Você foi REprovado");
+        window.alert(`${nome}, você foi REprovado com média ${media}`); // usando templatestrings
     }
-   
+    
+
     </script>
 </body>
 </html>
