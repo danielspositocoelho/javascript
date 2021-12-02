@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM - objetos e seleção</title>
+    <style>
+        body{
+            background: rgb(68,125,199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body> <!--usando uma extensão de mini server(e.g. live server) as alterações no arquivo são atualizadas automaticamente-->
+    
+    <h1>Iniciando estudos com <strong style=color:red>dom</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // selecionando um <p> do meu document e colocando numa var
+        var h1=window.document.getElementsByTagName('h1')[0]; //(nome da tag) [número do elemento no documento]
+            window.document.write("Está escrito assim com innerText: "+h1.innerText+"\n\r");//escreve o conteudo do elemento que está na variavel p1 / sem formatação ou estrutura
+        var corpo=window.document.body; 
+            corpo.style.background="black"; // muda para black o valor da tag background no objeto style dentro da tag body que está dentro da variavel corpo..
+           
+             window.document.write("<br>Está escrito assim com innerHTML: "+ h1.innerHTML);// com formatação original
+ /*selecionando com id
+            var d = window.document.getElementById("msg");
+            d.innerText="Estou aguardando"
+            d.style.background="green";*/
+
+            var d = window.document.querySelector("div#msg"); // seleção poe elementos css - sintaxe do css para id #id e para class .class
+            d.style.background="blue";
+
+
+    </script>
+</body>
+</html>
