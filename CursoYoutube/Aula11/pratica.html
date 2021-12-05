@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade - Você é Brasileiro?</h1>
+    Digite sua nacionalidade <input type="text" name="txtNacio" id="txtNacio">(com primeira letra maiúscula)
+    <br>
+    <input type="button" value="Clique aqui" onClick="teste()">
+    <div id="res">
+
+    </div>
+    <script>
+        function teste(){
+            let nacion = window.document.getElementById("txtNacio").value //sem o .value a var armazena um objeto, não o txt
+            let resu = window.document.getElementById("res")
+            resu.innerHTML=`<p>Sua nacionalidade é ${nacion}</p>`
+            
+            if(nacion == "Brasileiro"){
+                    resu.innerHTML+="<p>brbrbrbr HUEHUEHUEUHE</p>"
+            }
+            else{
+                    resu.innerHTML+="<p>Você não é Brasileiro</p>"
+                }
+        }
+    </script>
+</body>
+</html>
