@@ -8,17 +8,16 @@
     <title>Relógio Dinâmico</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onLoad="carregar()">
 
     <header><h1>Hora do Dia</h1></header>
     <section>
-        <div id="title"></div><!--Título-->
-        <div id="image"><img id="imagem" src="" alt="Imagem que ilustra a hora atual"></div><!--Imagem-->
-        <div id="comment"></div><!--Comentário-->
+        <div id="titulo"></div><!--Título-->
+        <div><img id="imagem" src="" alt="Imagem que ilusta o momento do dia"></div><!--Imagem-->
+        <br>
+        <div id="comentario"></div><!--Comentário-->
     </section>
     <footer><p>&copy;Daniel Spósito Coelho</p></footer><!--&copy; adiciona o simbolo unicode pro copyright-->
-    <script src="jscript.js">
-//script externo
-    </script>
+    <script src="jscript.js"></script> <!--script externo-->
 </body>
 </html>

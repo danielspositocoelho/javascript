@@ -1,0 +1,38 @@
+body{
+    font: normal 14pt;
+}
+header{
+    font-family: Helvetica;
+    color:mintcream;
+    font-style: bold;
+    font-size: larger;
+    text-align: center; /*em header e footer o text-align ja alinha todos os margins do elemento */
+    position:relative;
+    margin-bottom:30px;
+}
+section{
+    background-color: mintcream;
+    width:500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.501); /*atributos dessa tag: deslocamento lateralpx desloc verticalpx espalhamentopx e cor*/
+    padding:20px;
+    margin: auto; /*value auto centraliza horizontalmente o elemeento dentro do container e ajusta igualmente as margens baseado no width*/ 
+    text-align: center;
+}
+footer{font-family: Georgia;
+    color:mintcream;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+    position:relative;
+    margin-top: 40px;}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 180px;  
+}
+#comentario{
+    font-style: italic;
+    font-family: 'Courier';
+    font-size: 13pt;
+}
