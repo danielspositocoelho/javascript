@@ -1,7 +1,7 @@
 function verificacao(){
 //Calcular idade e pegar elementos
     var calendario = new Date();
-    var ano = calendario.getFullYear();
+    var ano = calendario.getFullYear(); // pega os 4 digits
     var anoNascimento = window.document.getElementById("anoNasc").value; 
     var idade = ano-anoNascimento;
     var resultado = window.document.getElementById("res");
@@ -29,22 +29,22 @@ function verificacao(){
         }
     */
  //criando dinamicamente o img element
- var imagem = window.document.createElement("imagem");
+ var imagem = document.createElement('img'); //NO ARGUMENTO DE createElement VAI A TAG DO ELEMENTO A SER CRIADO
  imagem.setAttribute('id', 'ilustra');
  imagem.setAttribute('alt', 'Imagem Ilustrativa do Gênero e idade');
    
  if(sex == "masculino"){
        //checando idades para colocar src correta da img
-       if(idade>=0 && idade<10){
+       if(idade>=0 && idade<12){
            //criança
             imagem.setAttribute('src','homemCrianca.jpg');
-       }else if(idade<21){
+       } else if(idade<21){
            //jovem
            imagem.setAttribute('src','homemJovem.jpg');
-       }else if(idade<60){
+       } else if(idade<60){
            //adulto
            imagem.setAttribute('src','homemAdulto.jpg');
-       }else{
+       } else{
            //idoso
            imagem.setAttribute('src','homemIdoso.jpg');
        }
@@ -58,10 +58,10 @@ function verificacao(){
         if(idade>=0 && idade<10){
             //criança
              imagem.setAttribute('src','mulherCrianca.jpg');
-        }else if(idade<21){
+        } else if(idade<21){
             //jovem
             imagem.setAttribute('src','mulherJovem.jpg');
-        }else if(idade<60){
+        } else if(idade<60){
             //adulto
             imagem.setAttribute('src','mulherAdulta.jpg');
         }else{

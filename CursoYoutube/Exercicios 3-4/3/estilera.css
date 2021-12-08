@@ -1,11 +1,11 @@
 body{
-    font: normal 14pt;
-    background-color: rgb(36, 143, 107);
+    background-color: darksalmon;
+    font: 14pt times;
 }
 header{
     font-family: Helvetica;
-    color:mintcream;
-    font-style: bold;
+    color:rgb(151, 214, 182);
+    font-style: bolder;
     font-size: larger;
     text-align: center; /*em header e footer o text-align ja alinha todos os margins do elemento */
     position:relative;
@@ -27,18 +27,3 @@ footer{font-family: Georgia;
     text-align: center;
     position:relative;
     margin-top: 20px;}
-
-img#ilustra{
-    width: 250px;
-    height: 250px;
-    border-radius: 180px;
-    position: relative;
-    margin: 20px 50px 20px 50px;}
-    
-input#botao{
-    width: 100px;
-    height: 30px;
-    margin: 10px 10px 10px 400px ;
-    position: relative;
-    box-shadow: 3px 3px 10px grey;
-}
