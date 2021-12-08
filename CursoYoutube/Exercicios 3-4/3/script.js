@@ -10,9 +10,15 @@ function pa(){
 
     var resultado = window.document.getElementById("resPa");
     
-    for(var i=inicio; i<fim; i+=passo) // a atualização da variavel deve ser de algum tipo de incremento, auto referencia *= += ++ -- etc...
+    for(var i=1; i<=fim; i++) // a atualização da variavel deve ser de algum tipo de incremento, auto referencia *= += ++ -- etc...
     {
-        resultado.innerText+=`${i.toString()} --> `;
+        if(i!=fim){
+            resultado.innerHTML+=`${inicio.toString()} -->  `;
+            inicio+=passo;
+        } else {     
+            resultado.innerHTML+=`${inicio.toString()} - FIM`;
+            inicio+=passo;
+        }
     }
     
 }
@@ -29,9 +35,15 @@ function pg(){
 
     var resultado = window.document.getElementById("resPg");
     
-    for(var i=inicio; i<fim; i*=passo) // a atualização da variavel deve ser de algum tipo de incremento, auto referencia *= += ++ -- etc...
+    for(var i=1; i<=fim; i++) // a atualização da variavel deve ser de algum tipo de incremento, auto referencia *= += ++ -- etc...
     {
-        resultado.innerText+=`${i.toString()} --> `;
+        if(i!=fim){
+            resultado.innerHTML+=`${inicio.toString()} -->  `;
+            inicio*=passo;
+        } else {     
+            resultado.innerHTML+=`${inicio.toString()} - FIM`;
+            inicio*=passo;
+        }
     }
-    
 }
+
