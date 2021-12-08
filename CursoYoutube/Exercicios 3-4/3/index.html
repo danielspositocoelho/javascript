@@ -9,27 +9,29 @@
 </head>
 <body>
     <header><h1>Progressões</h1></header>
-    <section>
+    <section id="secA"><form id="formPa">
         <div id='pa'>
             <h2>Progressão Aritmética</h2>
             <label>Primeiro Termo(a1): <input type="number" name="inicio" id="inicio"></label> <br>
             <label>Quantidade de termos(n): <input type="number" name="fim" id="fim"></label> <br>
             <label>Razão: <input type="number" name="passo" id="passo"></label> <br>
-            <input type="button" id="btn" value="Contar" onClick="pa()">
-        </div>
+            <input type="button" id="btnC" value="Calcular" onClick="pa()">
+            <input type="button" id="btnL" value="Limpar" onClick="limparPa()">
+        </div></form>
 
         <div id="resPa">
         </div>
     </section>
     <br>
-    <section>
+    <section id="secB"><form id="formPg">
         <div id='pg'> 
             <h2>Progressão Geométrica </h2>
-            <label>Primeiro Termo(a1): <input type="number" name="inicio" id="inicio"></label> <br>
-            <label>Quantidade de termos(n): <input type="number" name="fim" id="fim"></label> <br>
-            <label>Razão: <input type="number" name="passo" id="passo"></label> <br>
-            <input type="button" id="btn" value="Calcular" onClick="pg()">
-        </div>
+            <label>Primeiro Termo(a1): <input type="number" name="inicio" id="inicioB"></label> <br>
+            <label>Quantidade de termos(n): <input type="number" name="fim" id="fimB"></label> <br>
+            <label>Razão: <input type="number" name="passo" id="passoB"></label> <br>
+            <input type="button" id="btnC" value="Calcular" onClick="pg()">
+            <input type="button" id="btnL" value="Limpar" onClick="limparPg()">
+        </div></form>
 
         <div id="resPg">
         </div>
