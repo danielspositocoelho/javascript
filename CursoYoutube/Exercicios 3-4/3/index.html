@@ -8,16 +8,30 @@
     <link rel="stylesheet" href="estilera.css">
 </head>
 <body>
-    <header><h1>Vamos Contar?</h1></header>
+    <header><h1>Progressões</h1></header>
     <section>
-        <div>
-            <label>Começo: <input type="number" name="inicio" id="inicio"></label>
-            <label>Fim: <input type="number" name="fim" id="fim"></label>
-            <label>Passo: <input type="number" name="passo" id="passo"></label>
-            <input type="button" value="Contar" onClick="contar()">
+        <div id='pa'>
+            <h2>Progressão Aritmética</h2>
+            <label>Primeiro Termo(a1): <input type="number" name="inicio" id="inicio"></label> <br>
+            <label>Quantidade de termos(n): <input type="number" name="fim" id="fim"></label> <br>
+            <label>Razão: <input type="number" name="passo" id="passo"></label> <br>
+            <input type="button" id="btn" value="Contar" onClick="pa()">
         </div>
-        <div id="res">
-            <p></p>
+
+        <div id="resPa">
+        </div>
+    </section>
+    <br><br>
+    <section>
+        <div id='pg'> 
+            <h2>Progressão Geométrica </h2>
+            <label>Primeiro Termo(a1): <input type="number" name="inicio" id="inicio"></label> <br>
+            <label>Quantidade de termos(n): <input type="number" name="fim" id="fim"></label> <br>
+            <label>Razão: <input type="number" name="passo" id="passo"></label> <br>
+            <input type="button" id="btn" value="Contar" onClick="pg()">
+        </div>
+
+        <div id="resPg">
         </div>
     </section>
     <footer>&copy;Daniel Spósito Coelho</footer>

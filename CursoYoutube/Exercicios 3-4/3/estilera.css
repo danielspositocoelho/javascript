@@ -1,12 +1,12 @@
 body{
-    background-color: darksalmon;
+    background-color: rgba(228, 210, 203, 0.33);
     font: 14pt times;
 }
 header{
     font-family: Helvetica;
-    color:rgb(151, 214, 182);
+    color:rgb(31, 160, 95);
     font-style: bolder;
-    font-size: larger;
+    font-size: 18pt ;
     text-align: center; /*em header e footer o text-align ja alinha todos os margins do elemento */
     position:relative;
     margin-bottom:30px;
@@ -21,9 +21,12 @@ section{
     text-align: left;
 }
 footer{font-family: Georgia;
-    color:mintcream;
+    color:rgb(7, 39, 23);
     font-style: italic;
     font-size: small;
     text-align: center;
     position:relative;
     margin-top: 20px;}
+button{
+    
+}
