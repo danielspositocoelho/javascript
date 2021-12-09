@@ -15,7 +15,6 @@ section{
     background-color: mintcream;
     width:500px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.501); /*atributos dessa tag: deslocamento lateralpx desloc verticalpx espalhamentopx e cor*/
     padding:20px;
     margin: auto; /*value auto centraliza horizontalmente o elemento dentro do container e ajusta igualmente as margens baseado no width*/ 
     text-align: left;
