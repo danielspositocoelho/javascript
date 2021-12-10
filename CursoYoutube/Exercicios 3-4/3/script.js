@@ -1,7 +1,7 @@
 
     var resultadoA = document.getElementById("resPa");
     var resultadoB = document.getElementById("resPg");
-    var emojiSeta = String.fromCodePoint(0x1F449)
+    var emojiSeta = String.fromCodePoint(0x1F449) // \u{0x1f499} também funciona direto
     var emojiFim = String.fromCodePoint(0x1F3F4)
 
 function pa(){

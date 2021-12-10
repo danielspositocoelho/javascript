@@ -1,14 +1,22 @@
 body{
-    font-size: 15;
     background-color: rgb(214, 214, 255);
+    font-size:14pt;
 }
 section{
-    width:500px;
+    width:600px;
     background-color: cornsilk;
     border-radius: 15px;
-    margin:auto;
+    position:absolute;
+    margin: 0% 28% 0% 28%;
     text-align: left;
     padding:30px;
+}
+#limp{
+    position:absolute;
+    bottom:10px;
+    left: 540px;
+    width:70px;
+    height:30px;
 }
 header{
     margin:auto;
@@ -17,6 +25,25 @@ header{
     font-size:18pt;
     position: relative;
     margin-bottom: 30px;
-
-
 }
+label{
+    font-size:14pt;
+}
+#numA{
+    width:35px;
+    border-radius:30px;
+}
+#numB{
+    width:35px;
+    border-radius:30px;
+}
+#calc{
+    position:relative;
+    margin-top: 20px;
+    width:70px;
+    height:30px;
+}
+select{
+    width: 100px;
+}
+
