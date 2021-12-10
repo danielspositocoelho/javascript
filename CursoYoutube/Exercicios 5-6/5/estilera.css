@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(8, 113, 250, 0.719);
+    font: 14pt times;
+}
+header{
+    font-family: Helvetica;
+    color:white;
+    font-style: bolder;
+    font-size: 18pt ;
+    text-align: center; /*em header e footer o text-align ja alinha todos os margins do elemento */
+    position:relative;
+    margin-bottom:30px;
+}
+section{
+    background-color: mintcream;
+    width:500px;
+    border-radius: 12px;
+    padding:20px;
+    margin: auto; /*value auto centraliza horizontalmente o elemento dentro do container e ajusta igualmente as margens baseado no width*/ 
+    text-align: left;
+}
+footer{font-family: Georgia;
+    color:rgb(171, 244, 246);
+    font: italic 12pt 'Courier New' ;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+input{
+    position:relative;
+    margin-bottom:8px;
+    border-radius:5px;
+}
+.btn{
+    height:40px;
+    width:80px;
+    padding: 10px;
+    position:relative;
+    margin-top: 10px;;
+}
+#fin{
+    margin-left:400px;
+}
